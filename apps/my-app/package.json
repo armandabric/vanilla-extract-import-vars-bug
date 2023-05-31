@@ -1,0 +1,35 @@
+{
+  "name": "@acme/my-app",
+  "private": true,
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@acme/guidelines": "workspace:*",
+    "@fontsource-variable/montserrat": "^5.0.2",
+    "@remix-run/css-bundle": "^1.16.1",
+    "@remix-run/node": "^1.16.1",
+    "@remix-run/react": "^1.16.1",
+    "@remix-run/serve": "^1.16.1",
+    "@remix-run/server-runtime": "^1.16.1",
+    "@vanilla-extract/css": "^1.11.0",
+    "isbot": "^3.6.10",
+    "modern-normalize": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.16.1",
+    "@tsconfig/remix": "^1.0.4",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "typescript": "^5.0.4"
+  }
+}

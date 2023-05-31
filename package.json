@@ -1,0 +1,24 @@
+{
+  "name": "@acme/root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": "18.x"
+  },
+  "packageManager": "yarn@3.5.0",
+  "scripts": {
+    "dev": "yarn workspace @acme/my-app dev",
+    "build": "turbo run build",
+    "tsc": "turbo run tsc",
+    "format": "prettier --write '**/*.{html,ts,tsx,js,jsx,json,md,mdx,yml,yaml,css,graphql,gql}'",
+    "format:check": "prettier --check '**/*.{html,ts,tsx,js,jsx,json,md,mdx,yml,yaml,css,graphql,gql}'"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "prettier": "^2.8.8",
+    "turbo": "^1.9.9"
+  }
+}
